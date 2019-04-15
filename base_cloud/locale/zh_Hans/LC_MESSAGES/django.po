@@ -1,0 +1,53 @@
+msgid "Unknown error occurred, Please try again later."
+msgstr "未知错误，请稍后重试。"
+
+msgid "Image {} not found."
+msgstr "未找到镜像 {}"
+
+msgid "Image {} status not active."
+msgstr "镜像状态不可用{}"
+
+msgid "Unable to load docker image {}"
+msgstr "无法加载docker镜像 {}"
+
+msgid "Unable to get floating ip."
+msgstr "无法获取浮动IP。"
+
+msgid "Unable to retire hypervisors."
+msgstr "无法获取虚拟机管理器列表。"
+
+msgid "Unable to retire external networks."
+msgstr "无法获取外部网络。"
+
+msgid "Check floating ip quota: Error . Required ({}) > Allowance ({})) - Preallocated ({})"
+msgstr "检查浮动IP资源： 错误。 请求数量（{}）> 可用数量（{}）- 预分配数量（{}）"
+
+msgid "Check vcpu allowance: Error . Required ({}) > Allowance ({})) - Preallocated ({})"
+msgstr "检查CPU资源： 错误。 请求数量（{}）> 可用数量（{}）- 预分配数量（{}）"
+
+msgid "Check memory allowance: Error . Required ({}) > Allowance ({})) - Preallocated ({})"
+msgstr "检查内存资源： 错误。 请求数量（{}）> 可用数量（{}）- 预分配数量（{}）"
+
+msgid "Check disk allowance: Error . Required ({}) > Allowance ({})) - Preallocated ({})"
+msgstr "检查磁盘资源： 错误。 请求数量（{}）> 可用数量（{}）- 预分配数量（{}）"
+
+msgid "Unable to get ports for network {}."
+msgstr "无法获取网络{}的端口。"
+
+msgid "Unable to delete port {}."
+msgstr "无法删除端口 {}。"
+
+msgid "Unable to delete qos policy {}."
+msgstr "无法删除qos策略 {}。"
+
+msgid "Unable to delete firewall policy {}."
+msgstr "无法删除防火墙策略 {}。"
+
+msgid "Unable to delete firewall {}."
+msgstr "无法删除防火墙 {}。"
+
+msgid "Unable to check first boot."
+msgstr "无法检查是否首次启动。"
+
+msgid "Image store data directory not configured or not exists."
+msgstr "镜像数据存储目录未配置或者目录不存在。"

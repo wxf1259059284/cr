@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Hankaln">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>检测 - 赛宁场景引擎系统</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u68c0\u6d4b";
+    var mkdocs_page_input_path = "check.md";
+    var mkdocs_page_url = "/check/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> 赛宁场景引擎系统</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">拓扑图编辑</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">检测</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#_1">检测类型</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#_2">远程检测</a></li>
+        
+            <li><a class="toctree-l3" href="#_4">本地检测</a></li>
+        
+            <li><a class="toctree-l3" href="#_6">脚本来源说明</a></li>
+        
+            <li><a class="toctree-l3" href="#_7">脚本格式</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mission/">任务</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../traffic/">流量</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../traffic_event/">事件</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../agent/">agent</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">赛宁场景引擎系统</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>检测</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p><strong>任务类型</strong></p>
+<ul>
+<li>试卷型<ul>
+<li>题目类型</li>
+<li>步骤</li>
+</ul>
+</li>
+<li>CTF型<ul>
+<li>步骤</li>
+</ul>
+</li>
+<li>检测型<ul>
+<li>检测型类型</li>
+<li>步骤</li>
+<li>说明</li>
+<li>参数注意事项</li>
+<li>注意事项</li>
+</ul>
+</li>
+<li>任务执行次数以及计分规则</li>
+</ul>
+<hr />
+<h1 id="_1">检测类型</h1>
+<ul>
+<li>远程检测</li>
+<li>本地检测</li>
+</ul>
+<hr />
+<h2 id="_2">远程检测</h2>
+<h3 id="_3">新建远程检测步骤</h3>
+<ol>
+<li>
+<p>在CGM管理中，新建checker机器，并设置所需环境（若已有所需的checker机器，可跳过此步）</p>
+</li>
+<li>
+<p>新建远程检测，<strong>并关联checker机</strong></p>
+</li>
+</ol>
+<p><img alt="" src="../img/远程检测.png" /></p>
+<p><strong>说明：</strong></p>
+<div class="codehilite"><pre><code><span></span>  - 脚本格式请参照 - [脚本来源说明](#script_format)
+  - 脚本来源支持多种方式，请参考-[脚本来源说明](#script_source)
+  - 若无“类型”，请返回列表页面，新建类型，
+  - 若无“Checker”， 请在CGM管理中，新建checker机器，详情参考第一步
+  - 脚本支持python和shell语言
+</code></pre></div>
+
+
+<hr />
+<h2 id="_4">本地检测</h2>
+<h3 id="_5">新建本地检测步骤</h3>
+<ol>
+<li>新建本机检测， <strong>无需关联checker机</strong></li>
+</ol>
+<p><img alt="" src="../img/本地检测.png" /></p>
+<p><strong>说明：</strong></p>
+<div class="codehilite"><pre><code><span></span>  - 脚本格式请参照 - [脚本来源说明](#script_format)
+  - 脚本来源支持多种方式，请参考-[脚本来源说明](#script_source)
+  - 若无“类型”，请返回列表页面，新建类型，
+  - 脚本支持python和shell语言
+</code></pre></div>
+
+
+<hr />
+<h2 id="_6"><span id="script_source">脚本来源说明</span></h2>
+<ol>
+<li>在线编写</li>
+<li>上传脚本</li>
+<li>从已有脚本中选择/修改，<strong><em>不影响已有脚本</em></strong></li>
+</ol>
+<hr />
+<h2 id="_7">脚本格式</h2>
+<h3 id="1-python">1. python检测脚本格式</h3>
+<p>必须含有名为<strong>checker</strong>的函数,
+   返回值为：<strong>{&ldquo;check&rdquo;: {check_status}, &ldquo;msg&rdquo;: {msg}}</strong>
+   返回值说明：</p>
+<p>```
+{
+    &ldquo;check&rdquo;: {check_status},
+    &ldquo;msg&rdquo;: {msg}
+}        </p>
+<p>{check_status}:
+    &ldquo;success&rdquo;: 表示check成功,
+    &ldquo;fail&rdquo;: 表示check失败</p>
+<p>{msg}:
+    &ldquo;xxxxx&rdquo;: 返回信息(自定义)</p>
+<p>```
+   例如：</p>
+<p><code>python
+def checker(ip, port=80, **kwargs):
+    import socket
+    sk = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    sk.settimeout(1)
+    try:
+        sk.connect((ip, port))
+        ret = {
+            "check": "success",
+            "msg": "Check Success"
+        }
+    except Exception as e:
+        ret = {
+            "check": "fail",
+            "msg": str(e)
+        }
+    return ret</code></p>
+<h3 id="2-shell">2. shell检测脚本格式</h3>
+<p>必须含有返回值:</p>
+<div class="codehilite"><pre><code><span></span>&quot;CheckUp&quot;: &quot;检测成功&quot;,
+&quot;CheckDown&quot;: &quot;检测失败&quot;
+</code></pre></div>
+
+
+<p>例如：</p>
+<div class="codehilite"><pre><code><span></span>ping $1 -c 2 -w 1 | grep -q &quot;ttl=&quot; &amp;&amp; echo &quot;CheckUp&quot; || echo &quot;CheckDown&quot;
+</code></pre></div>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../mission/" class="btn btn-neutral float-right" title="任务">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="拓扑图编辑"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>CyberPeace.cn</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../mission/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script>
+
+</body>
+</html>

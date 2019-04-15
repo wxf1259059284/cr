@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Hankaln">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>任务 - 赛宁场景引擎系统</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u4efb\u52a1";
+    var mkdocs_page_input_path = "mission.md";
+    var mkdocs_page_url = "/mission/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> 赛宁场景引擎系统</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">拓扑图编辑</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../check/">检测</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">任务</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#_1">任务类型</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#_2">试卷型</a></li>
+        
+            <li><a class="toctree-l3" href="#ctf">CTF型</a></li>
+        
+            <li><a class="toctree-l3" href="#_6">检测型</a></li>
+        
+            <li><a class="toctree-l3" href="#_12">任务执行次数以及计分规则</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../traffic/">流量</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../traffic_event/">事件</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../agent/">agent</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">赛宁场景引擎系统</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>任务</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p><strong>检测类型</strong></p>
+<ul>
+<li>远程检测<ul>
+<li>新建远程检测步骤</li>
+</ul>
+</li>
+<li>本地检测<ul>
+<li>新建本地检测步骤</li>
+</ul>
+</li>
+<li>脚本来源说明</li>
+<li>脚本格式<ul>
+<li>python检测脚本格式</li>
+<li>shell检测脚本格式</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="_1">任务类型</h1>
+<ul>
+<li>试卷型</li>
+<li>CTF型</li>
+<li>检测型</li>
+</ul>
+<hr />
+<h2 id="_2">试卷型</h2>
+<h3 id="_3">题目类型</h3>
+<ol>
+<li>判断题</li>
+<li>单选题</li>
+<li>多选题</li>
+<li>简答题</li>
+</ol>
+<h3 id="_4">步骤</h3>
+<ol>
+<li>点击新增，增加题目</li>
+<li>填写题目（<strong>“内容”为该题目的题干</strong>）</li>
+<li>设置答案</li>
+</ol>
+<p><img alt="" src="../img/试卷型.png" /></p>
+<hr />
+<h2 id="ctf">CTF型</h2>
+<h3 id="_5">步骤</h3>
+<ol>
+<li>先选择靶机</li>
+<li>填写flag</li>
+</ol>
+<p><img alt="" src="../img/CTF型新增.png" /></p>
+<hr />
+<h2 id="_6">检测型</h2>
+<h3 id="_7">检测型类型</h3>
+<ol>
+<li>远程检测</li>
+<li>本地检测</li>
+</ol>
+<h3 id="_8">步骤</h3>
+<ol>
+<li>选择检测类型（远程检测/本地检测</li>
+<li>选择靶机</li>
+<li>选择靶机网络</li>
+<li>选择检测脚本</li>
+<li>填写脚本所需参数（可选）</li>
+<li>检测次数（默认为检测一次）</li>
+<li>设置首次检测时间（默认为0）</li>
+<li>设置检测间隔时间（检测次数为多次时）</li>
+<li>设置是否轮询（检测次数为多次时）</li>
+</ol>
+<p><strong>远程检测</strong></p>
+<p><img alt="检测" src="../img/远程检测.png" /></p>
+<p><strong>本地检测</strong></p>
+<p><img alt="" src="../img/本地检测.png" /></p>
+<h3 id="_9">说明</h3>
+<ul>
+<li>分数：分数可以负分</li>
+<li>靶机：靶机为拓扑中添加的机器。</li>
+<li>靶机网络： 为所选靶机连接的所有网络。</li>
+<li>脚本参数：脚本参数是否需要，传参内容等根据具体脚本而定</li>
+<li>
+<p>传参格式例如：</p>
+<div class="codehilite"><pre><code><span></span>1、 {&quot;port&quot;:80, &quot;time&quot;:3}
+2、 port=80, time=3
+</code></pre></div>
+
+
+</li>
+<li>
+<p>检测次数与轮询，请看 &gt; <a href="#rule">任务执行次数以及计分规则</a></p>
+</li>
+</ul>
+<h3 id="_10">参数注意事项</h3>
+<p>在填写参数的时候，<strong>无需填写ip</strong>，ip默认<strong>作为第一位参数</strong>。ip的值为靶机ip，动态生成。
+   - Python传参示例：</p>
+<div class="codehilite"><pre><code><span></span>    <span class="sb">``</span><span class="err">`</span><span class="n">python</span>
+    <span class="k">def</span> <span class="nf">checker</span><span class="p">(</span><span class="n">ip</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">80</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="kn">import</span> <span class="nn">socket</span>
+        <span class="n">sk</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">socket</span><span class="p">(</span><span class="n">socket</span><span class="o">.</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">socket</span><span class="o">.</span><span class="n">SOCK_STREAM</span><span class="p">)</span>
+        <span class="n">sk</span><span class="o">.</span><span class="n">settimeout</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">sk</span><span class="o">.</span><span class="n">connect</span><span class="p">((</span><span class="n">ip</span><span class="p">,</span> <span class="n">port</span><span class="p">))</span>
+            <span class="n">ret</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="s2">&quot;check&quot;</span><span class="p">:</span> <span class="s2">&quot;success&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;Check Success&quot;</span>
+            <span class="p">}</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">ret</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="s2">&quot;check&quot;</span><span class="p">:</span> <span class="s2">&quot;fail&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;msg&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+            <span class="p">}</span>
+        <span class="k">return</span> <span class="n">ret</span>
+    <span class="sb">``</span><span class="err">`</span>
+
+    <span class="err">正确传参：</span>
+
+    <span class="err">​</span>    <span class="n">port</span><span class="o">=</span><span class="mi">90</span> <span class="p">(</span><span class="err">因代码中</span><span class="n">port</span><span class="err">有默认值，若</span><span class="n">port</span><span class="o">=</span><span class="mi">80</span><span class="err">时，也可以不传。</span><span class="p">)</span>
+
+    <span class="err">错误传参：</span>
+
+       <span class="n">ip</span><span class="o">=</span><span class="err">“</span><span class="n">xxx</span><span class="o">.</span><span class="n">xxx</span><span class="o">.</span><span class="n">xx</span><span class="o">.</span><span class="n">xx</span><span class="err">”，</span> <span class="n">port</span><span class="o">=</span><span class="mi">90</span>
+</code></pre></div>
+
+
+<ul>
+<li>
+<p>shell传参示例：</p>
+<p><code>shell
+ ping $1 -c $2 -w 1 | grep -q "ttl=" &amp;&amp; echo "CheckUp" || echo "CheckDown"</code></p>
+<p>正确传参：</p>
+<p>times=4（<strong>无需传&rdquo;$1&rdquo;的参数，前面的“time”在脚本实际运行中无任何意义可自行定义</strong>)</p>
+<p>错误传参：</p>
+<p>ip=“127.0.0.1”，times=4</p>
+<p><strong>若脚本中不需要靶机ip，则直接使用“$2”作为参数的开始</strong>,例如：</p>
+<p><code>shell
+ ping 127.0.0.1 -c $2 -w 1 | grep -q "ttl=" &amp;&amp; echo "CheckUp" || echo "CheckDown"</code></p>
+</li>
+</ul>
+<h3 id="_11">注意事项</h3>
+<ul>
+<li>当检测类型为远程检测时，拓扑中会生成一个<strong>Checker机器</strong>，<strong>请编辑该机器</strong>，在该机器的“自定义命令 ” 中添加命令：<strong> /start.sh</strong>， 并检验“接入方式”中是否有nc,端口是否为8192，若无，则添加<strong>nc接入方式，端口为</strong>8192**</li>
+</ul>
+<p><img alt="" src="../img/start.png" /></p>
+<ul>
+<li>当检测类型为远程检测时，<strong> 请编辑所选的靶机</strong>，在所选靶机的“自定义命令”中添加命令： <strong>/start.sh</strong>，并检验“接入方式”中是否有nc,端口是否为8192，若无，则添加<strong>nc接入方式，端口为8192</strong></li>
+</ul>
+<p><img alt="" src="../img/agent.png" /></p>
+<hr />
+<h2 id="_12"><span id="rule">任务执行次数以及计分规则</span></h2>
+<ol>
+<li>&ldquo;检测一次&rdquo;(<strong>开启</strong>) —— 只检测一次，失败与否，不再检测，失败不计分，成功计分一次(分数可为负分)</li>
+<li>&ldquo;检测一次&rdquo;(<strong>关闭</strong>), &ldquo;是否轮询&rdquo;(<strong>关闭</strong>) —— 检测多次，直到检测成功，停止检测，计分一次(分数可为负分)</li>
+<li>&ldquo;检测一次&rdquo;(<strong>关闭</strong>), &ldquo;是否轮询&rdquo;(<strong>开启</strong>) —— 检测多次，检测成功一次，计分一次(多次计分)，继续检测，当场景销毁或手动停止任务时停止检测(分数可为负分)</li>
+</ol>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../traffic/" class="btn btn-neutral float-right" title="流量">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../check/" class="btn btn-neutral" title="检测"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>CyberPeace.cn</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../check/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../traffic/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script>
+
+</body>
+</html>

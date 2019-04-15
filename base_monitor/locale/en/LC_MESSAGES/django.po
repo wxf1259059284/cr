@@ -1,0 +1,14 @@
+msgid "x_len_three"
+msgstr "The length is not less than 3 and not more than 100"
+
+msgid "x_english_num"
+msgstr "The name consists only of English letters, numbers, and underscores"
+
+msgid "x_name_not_spaces"
+msgstr "Name cannot contain spaces"
+
+msgid "x_illegal_parameter_value"
+msgstr "Illegal parameter value"
+
+msgid "x_code_not_specifications"
+msgstr "Code does not meet specifications"

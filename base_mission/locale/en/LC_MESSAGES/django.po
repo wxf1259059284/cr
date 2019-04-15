@@ -1,0 +1,17 @@
+msgid "x_not_find_mission"
+msgstr "Can't find the mission"
+
+msgid "x_missing_parameter"
+msgstr "Missing parameter"
+
+msgid "x_required_field"
+msgstr "Required Field"
+
+msgid "x_name_have_existed"
+msgstr "Name Already Exists"
+
+msgid "x_not_existed"
+msgstr "Name Not Found"
+
+msgid "x_out_of_range"
+msgstr "Out Of Range"

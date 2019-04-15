@@ -1,0 +1,86 @@
+msgid "x_missing_parameters"
+msgstr "缺少参数"
+
+msgid "x_only_exam"
+msgstr "只是支持考试判断"
+
+msgid "x_has_down"
+msgstr "已完成， 无法再次提交"
+
+msgid "x_is_number"
+msgstr "必须是数字"
+
+msgid "x_not_found"
+msgstr "没有找到"
+
+msgid "x_check_not_commit"
+msgstr "checker 型任务不能提交"
+
+msgid "x_name_exists"
+msgstr "名称已存在"
+
+msgid "x_event_is_running"
+msgstr "事件正在运行"
+
+msgid "x_scene_id_is_not_allow"
+msgstr "SCENE ID 不在允许范围"
+
+msgid "x_cr_scene_instance_is_none"
+msgstr "Cr Scene 实例暂未启动"
+
+msgid "x_parameter_syntax_error"
+msgstr "参数语法错误"
+
+msgid "x_XSS_attack"
+msgstr "XSS 攻击"
+
+msgid "x_field_length_cannot_exceed"
+msgstr "字段长度不能超过{length}"
+
+msgid "x_start_time_is_greater_than_end_time"
+msgstr "开始时间大于结束时间"
+
+msgid "x_select_at_least_one_scene"
+msgstr "请至少选择一个场景"
+
+msgid "x_logo_can_not_be_empty"
+msgstr "logo 不能为空"
+
+msgid "x_unfinished_mission_cannot_modify_scores"
+msgstr "未完成任务不能修改分数"
+
+msgid "x_submit_score_must_be_greater_than_0"
+msgstr "提交分数必须大于0"
+
+msgid "x_the_scene_id_does_not_belong_to_the_crevent"
+msgstr "场景id不属于该实例"
+
+msgid "x_mission_parameter_error"
+msgstr "参数错误"
+
+msgid "x_general_user_is_not_allow"
+msgstr "普通用户无法访问"
+
+msgid "x_general_user_and_referee_is_not_allow"
+msgstr "只有管理员才能访问"
+
+msgid "x_this_event_allow_this_event_people_allow"
+msgstr "您不属于该实例下的用户"
+
+msgid "x_only_general_user_can_access"
+msgstr "实例下的普通用户才可以访问"
+
+msgid "x_no_permission_to_access_a_scene_under_the_event"
+msgstr "没有权限访问实例下的场景"
+
+msgid "x_corresponding_single_scene_in_the_event_can_only_be_accessed_by_ordinary_users"
+msgstr "实例下对应的单个场景下的只有普通用户才能访问"
+
+msgid "x_situation_service_not_start_call_admin"
+msgstr "态势服务没有启动，请联系管理员！"
+
+msgid "x_operation_failed"
+msgstr "操作失败！"
+
+msgid "x_vis_start_failed_call_admin"
+msgstr "态势启动失败，请联系管理员检查"

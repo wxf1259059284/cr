@@ -1,0 +1,16 @@
+site_name: 赛宁场景引擎系统
+site_author : Hankaln
+copyright : CyberPeace.cn
+theme: readthedocs
+markdown_extensions :
+    - tables
+    - codehilite
+    - smarty
+    - toc
+pages:
+    - 拓扑图编辑: index.md
+    - 检测: check.md
+    - 任务: mission.md
+    - 流量: traffic.md
+    - 事件: traffic_event.md
+    - agent: agent.md  

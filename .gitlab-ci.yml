@@ -1,0 +1,16 @@
+before_script:
+  - ls ./
+
+after_script:
+  - ls ./
+
+stages:
+  - deploy
+
+deploy_cr:
+  stage: deploy
+  script:
+    - chmod +x _deploy/gitlab_ci_deploy.sh
+    - ./_deploy/gitlab_ci_deploy.sh
+  tags:
+    - develop

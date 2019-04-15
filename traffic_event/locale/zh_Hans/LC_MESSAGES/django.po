@@ -1,0 +1,26 @@
+msgid "x_required_field"
+msgstr "必填字段"
+
+msgid "x_name_have_existed"
+msgstr "名称已存在"
+
+msgid "x_traffic_error"
+msgstr "流量错误"
+
+msgid "x_event_not_found"
+msgstr "事件不存在"
+
+msgid "x_scene_not_found"
+msgstr "场景不存在"
+
+msgid "x_traffic_event_not_found"
+msgstr "流量事件不存在"
+
+msgid "x_get_traffic_result_error"
+msgstr "获取流量状态错误"
+
+msgid "x_invalid_parameter"
+msgstr "非法参数"
+
+msgid "x_invalid_character"
+msgstr "非法字符"

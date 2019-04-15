@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Hankaln">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>流量 - 赛宁场景引擎系统</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u6d41\u91cf";
+    var mkdocs_page_input_path = "traffic.md";
+    var mkdocs_page_url = "/traffic/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> 赛宁场景引擎系统</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">拓扑图编辑</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../check/">检测</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mission/">任务</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">流量</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#_1">流量</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#_2">背景流量</a></li>
+        
+            <li><a class="toctree-l3" href="#_5">智能流量</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../traffic_event/">事件</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../agent/">agent</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">赛宁场景引擎系统</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>流量</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="_1">流量</h1>
+<ul>
+<li>背景流量</li>
+<li>智能流量</li>
+</ul>
+<hr />
+<h2 id="_2">背景流量</h2>
+<p>系统在TRM上使用Tcpreplay来重放你在网络上捕获的流量或现有的流量包</p>
+<h3 id="_3">录制流量</h3>
+<ul>
+<li>Wireshark</li>
+<li>Tcpdump</li>
+</ul>
+<div class="codehilite"><pre><code><span></span>tcpdump -i eth0 -w example.pcap -s <span class="m">0</span>
+-i <span class="c1">#是指定要抓取的网卡</span>
+-w <span class="c1">#指定结果保存的位置</span>
+</code></pre></div>
+
+
+<h3 id="trm">TRM准备</h3>
+<p>前提：ubuntu/centos(docker)，python2， agent-server</p>
+<p>待安装：tcpreplay，netifaces</p>
+<div class="codehilite"><pre><code><span></span><span class="c1"># 安装tcpreplay</span>
+<span class="c1"># ubuntu:</span>
+apt-get install tcpreplay
+<span class="c1"># centos:</span>
+yum install epel-release
+yum install tcpreplay
+
+<span class="c1"># 安装netifaces</span>
+pip install netifaces
+</code></pre></div>
+
+
+<h3 id="_4">新增背景流量</h3>
+<ol>
+<li>
+<p>在TRM管理中，新建流量重放机器</p>
+</li>
+<li>
+<p>新增背景流量</p>
+</li>
+</ol>
+<p><img alt="" src="../img/traffic_01.png" /></p>
+<div class="codehilite"><pre><code><span></span>**说明：**
+- **只支持上传.pcap后缀的流量包**，选定TRM后完成流量的上传
+- 若无“类型”，请返回列表页面，新建类型
+</code></pre></div>
+
+
+<hr />
+<h2 id="_5">智能流量</h2>
+<p>系统在TGM上执行自定义脚本生成动态流量</p>
+<h3 id="_6">新增智能流量</h3>
+<ol>
+<li>
+<p>在TRM管理中，新建流量发生机器</p>
+</li>
+<li>
+<p>新增智能流量</p>
+</li>
+</ol>
+<p><img alt="" src="../img/traffic_02.png" /></p>
+<p>脚本可以是python或shell脚本</p>
+<ul>
+<li>python</li>
+</ul>
+<p>python脚本的入口函数名必须为<code>traffic</code>，默认参数<code>ip</code>是场景实例启动后<strong>目标靶机的ip</strong>，其他参数可以在场景编排时，动态添加。以ping命令产生的流量为例，可以像这样来写一个简单的python流量脚本:</p>
+<div class="codehilite"><pre><code><span></span><span class="kn">import</span> <span class="nn">threading</span>
+<span class="kn">import</span> <span class="nn">subprocess</span>
+
+
+<span class="k">def</span> <span class="nf">execute_command</span><span class="p">(</span><span class="n">command</span><span class="p">):</span>
+    <span class="n">process</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">Popen</span><span class="p">(</span><span class="n">command</span><span class="p">,</span> <span class="n">stdin</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">,</span> <span class="n">stdout</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">,</span> <span class="n">shell</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">traffic</span><span class="p">(</span><span class="n">ip</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="n">times</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;times&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;times&#39;</span><span class="p">)</span> <span class="k">else</span> <span class="s1">&#39;20&#39;</span>
+    <span class="n">command</span> <span class="o">=</span> <span class="s2">&quot;ping </span><span class="si">%s</span><span class="s2"> -c </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">ip</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">times</span><span class="p">))</span>
+    <span class="n">execute_command</span><span class="p">(</span><span class="n">command</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">command</span>
+</code></pre></div>
+
+
+<ul>
+<li>shell</li>
+</ul>
+<p>shell脚本的第一个参数默认为场景实例启动后<strong>目标靶机的ip</strong>，其他参数可以在场景编排时，动态添加。以ping命令产生的流量为例，可以像这样来写一个简单的shell流量脚本:</p>
+<div class="codehilite"><pre><code><span></span>    ping <span class="nv">$1</span> -c <span class="m">100</span>
+</code></pre></div>
+
+
+<p>选定TGM，完成智能流添加</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../traffic_event/" class="btn btn-neutral float-right" title="事件">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../mission/" class="btn btn-neutral" title="任务"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>CyberPeace.cn</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../mission/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../traffic_event/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script>
+
+</body>
+</html>

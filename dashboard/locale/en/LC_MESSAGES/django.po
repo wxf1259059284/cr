@@ -1,0 +1,20 @@
+msgid "x_general_user"
+msgstr "General User"
+
+msgid "x_administrator"
+msgstr "Administrator"
+
+msgid "x_instance"
+msgstr "Instance"
+
+msgid "x_scenes"
+msgstr "Scenes"
+
+msgid "x_target"
+msgstr "Target"
+
+msgid "x_flow"
+msgstr "Flow"
+
+msgid "x_task"
+msgstr "Task"

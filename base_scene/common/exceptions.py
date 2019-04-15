@@ -1,0 +1,3 @@
+
+class SceneException(Exception):
+    pass

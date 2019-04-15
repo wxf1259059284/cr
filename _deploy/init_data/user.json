@@ -1,0 +1,28 @@
+[
+  {
+    "model": "base_auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$36000$UC8XD2zxnA2K$SRbvW5bhvtOVeaDTuPWJyoDh7iH9/lUWNRn9JsHQDDQ=",
+      "last_login": "2018-11-26T10:08:11.279",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "thj8@163.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2018-11-13T09:43:29.650",
+      "logo": "",
+      "nickname": "",
+      "name": "",
+      "profile": "",
+      "organization": null,
+      "last_login_ip": null,
+      "status": 1,
+      "extra": "",
+      "groups": [1],
+      "user_permissions": []
+    }
+  }
+]

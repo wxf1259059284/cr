@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Hankaln">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>事件 - 赛宁场景引擎系统</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u4e8b\u4ef6";
+    var mkdocs_page_input_path = "traffic_event.md";
+    var mkdocs_page_url = "/traffic_event/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> 赛宁场景引擎系统</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">拓扑图编辑</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../check/">检测</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mission/">任务</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../traffic/">流量</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">事件</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#_1">流量事件</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#_2">前置要求：</a></li>
+        
+            <li><a class="toctree-l3" href="#_3">添加流量事件</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../agent/">agent</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">赛宁场景引擎系统</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>事件</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="_1">流量事件</h1>
+<ul>
+<li>背景事件</li>
+<li>智能事件</li>
+</ul>
+<hr />
+<h3 id="_2"><font color=#FF3333><strong>前置要求：</strong></font></h3>
+<ul>
+<li>拓扑中存在靶机</li>
+<li>靶机已配置网络</li>
+</ul>
+<p><img alt="" src="../img/traffic_03.png" /></p>
+<h3 id="_3">添加流量事件</h3>
+<p><img alt="" src="../img/traffic_04.png" /></p>
+<p><strong size="4">事件类型 </strong>
+事件分为<strong>背景事件/智能事件</strong>两种类型</p>
+<ul>
+<li><strong>背景事件</strong>即场景实例启动时同时启动TRM向目标靶机持续发送背景流量</li>
+<li><strong>智能事件</strong>即场景实例启动时同时启动TGM向目标靶机持续发送智能流量</li>
+</ul>
+<p><strong size="4">启动方式 </strong>
+启动方式分为<strong>自启动/延迟启动</strong>两种类型</p>
+<ul>
+<li><strong>自启动</strong>即随场景实例启动时启动流量发生器发送流量</li>
+<li><strong>延迟启动</strong>即随场景实例启动后延时启动流量发生器发送流量，在设定时间开始之前可手动启动该事件</li>
+</ul>
+<p><strong size="4">靶机 </strong>
+选择流量事件的目标靶机</p>
+<p><strong size="4">网络 </strong>
+选择目标靶机所在的网络</p>
+<p><strong size="4">流量类型 </strong>
+选择流量的类型</p>
+<p><strong size="4">流量</strong>
+选择流量</p>
+<p><strong size="4">参数</strong>
+支持动态参数即需要动态变化的参数。用<code>=</code>赋值，多个参数用<code>,</code>号隔开：</p>
+<div class="codehilite"><pre><code><span></span>times=10, delay=10
+</code></pre></div>
+
+
+<p><strong size=4>注意：</strong></p>
+<ul>
+<li>添加完流量事件后，需返回至拓扑页面再次保存</li>
+<li>TGM/TRM需配置启动命令</li>
+</ul>
+<div class="codehilite"><pre><code><span></span>/start.sh
+</code></pre></div>
+
+
+<p><img alt="" src="../img/traffic_05.png" /></p>
+<ul>
+<li>TGM/TRM在靶场前台不予显示</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../agent/" class="btn btn-neutral float-right" title="agent">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../traffic/" class="btn btn-neutral" title="流量"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>CyberPeace.cn</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../traffic/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../agent/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script>
+
+</body>
+</html>

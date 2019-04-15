@@ -1,0 +1,34 @@
+msgid "x_static_traffic"
+msgstr "Static Traffic"
+
+msgid "x_dynamic_traffic"
+msgstr "Dynamic Traffic"
+
+msgid "x_invalid_parameters"
+msgstr "Invalid Parameters"
+
+msgid "x_required_field"
+msgstr "Required Field"
+
+msgid "x_name_existed"
+msgstr "Name already exists"
+
+msgid "x_out_of_range"
+msgstr "Parameter value beyond range"
+
+msgid "x_fields_not_exist"
+msgstr "Field does not exist"
+
+msgid "x_event_in_progress"
+msgstr "The event is in progress."
+
+msgid "x_missing_parameters"
+msgstr "Missing parameters"
+msgid "x_field_invalid"
+msgstr "Field Invalid"
+
+msgid "x_please_upload_pcap"
+msgstr "Please Upload Pcap File"
+
+msgid "x_category_be_used"
+msgstr "Traffic Category is being used, can not be deleted"

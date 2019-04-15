@@ -1,0 +1,32 @@
+msgid "x_connection_refused"
+msgstr "Connection Refused"
+
+msgid "x_unknown_error"
+msgstr "Unknown Error"
+
+msgid "x_is_running"
+msgstr "Running"
+
+msgid "x_busy_server"
+msgstr "Busy server"
+
+msgid "x_no_operation_permission"
+msgstr "No operation permission"
+
+msgid "x_invalid_parameter"
+msgstr "Invalid parameter"
+
+msgid "x_invalid_parameter_value"
+msgstr "Invalid parameter value"
+
+msgid "x_duplicate_submission"
+msgstr "Duplicate submission"
+
+msgid "x_duplicate_request"
+msgstr "Duplicate request"
+
+msgid "x_data_save_failed"
+msgstr "Data save failed"
+
+msgid "x_invalid_value"
+msgstr "Invalid value"

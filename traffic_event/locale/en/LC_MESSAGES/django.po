@@ -1,0 +1,29 @@
+msgid "x_required_field"
+msgstr "Required Field"
+
+msgid "x_name_have_existed"
+msgstr "Name already exists"
+
+msgid "x_traffic_error"
+msgstr "Traffic error"
+
+msgid "x_event_not_found"
+msgstr "Events do not exist"
+
+msgid "x_is_running"
+msgstr "Running"
+
+msgid "x_scene_not_found"
+msgstr "Scene does not exist"
+
+msgid "x_traffic_event_not_found"
+msgstr "Traffic event not found"
+
+msgid "x_get_traffic_result_error"
+msgstr "Get traffic result error"
+
+msgid "x_invalid_parameter"
+msgstr "Invalid Parameter"
+
+msgid "x_invalid_character"
+msgstr "Invalid Character"

@@ -1,0 +1,86 @@
+msgid "x_missing_parameters"
+msgstr "Missing Parameters"
+
+msgid "x_only_exam"
+msgstr "Only Exam"
+
+msgid "x_has_down"
+msgstr "Has Down"
+
+msgid "x_is_number"
+msgstr "Is Number"
+
+msgid "x_not_found"
+msgstr "Not Found"
+
+msgid "x_check_not_commit"
+msgstr "Check Not Commit"
+
+msgid "x_name_exists"
+msgstr "Name Exists"
+
+msgid "x_event_is_running"
+msgstr "Event Is Running"
+
+msgid "x_scene_id_is_not_allow"
+msgstr "Scene Id Is Not Allow"
+
+msgid "x_cr_scene_instance_is_none"
+msgstr "Cr Scene Instance Not Start"
+
+msgid "x_parameter_syntax_error"
+msgstr "Parameter Syntax Error"
+
+msgid "x_XSS_attack"
+msgstr "XSS Attack"
+
+msgid "x_field_length_cannot_exceed"
+msgstr "Field Length Cannot Exceed {length}"
+
+msgid "x_start_time_is_greater_than_end_time"
+msgstr "Start Time Is Greater Than End Time"
+
+msgid "x_select_at_least_one_scene"
+msgstr "Select At Least One Scene"
+
+msgid "x_logo_can_not_be_empty"
+msgstr "Logo Can't Be Empty"
+
+msgid "x_unfinished_mission_cannot_modify_scores"
+msgstr "Unfinished Mission Cannot Modify Scores"
+
+msgid "x_submit_score_must_be_greater_than_0"
+msgstr "Submit Score Must Be Greater Than 0"
+
+msgid "x_the_scene_id_does_not_belong_to_the_crevent"
+msgstr "The Scene Id Does Not Belong To The Crevent"
+
+msgid "x_mission_parameter_error"
+msgstr "Parameter Error"
+
+msgid "x_general_user_is_not_allow"
+msgstr "General User Is Not Allow"
+
+msgid "x_general_user_and_referee_is_not_allow"
+msgstr "General User And Referee is Not Allow"
+
+msgid "x_this_event_allow_this_event_people_allow"
+msgstr "this event allow this event people allow"
+
+msgid "x_only_general_user_can_access"
+msgstr "Only General User Can Access"
+
+msgid "x_no_permission_to_access_a_scene_under_the_event"
+msgstr "No Permission To Access A Scene Under The CrEvent"
+
+msgid "x_corresponding_single_scene_in_the_event_can_only_be_accessed_by_ordinary_users"
+msgstr "The corresponding single scene in the instance can only be accessed by ordinary users"
+
+msgid "x_situation_service_not_start_call_admin"
+msgstr "The situational service did not start, please contact the administrator!"
+
+msgid "x_operation_failed"
+msgstr "Operation Failed！"
+
+msgid "x_vis_start_failed_call_admin"
+msgstr "Vis Start Failed Call Admin"

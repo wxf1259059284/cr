@@ -1,0 +1,17 @@
+msgid "x_not_find_mission"
+msgstr "找不到任务"
+
+msgid "x_missing_parameter"
+msgstr "参数缺失"
+
+msgid "x_required_field"
+msgstr "必填字段"
+
+msgid "x_name_have_existed"
+msgstr "名称已存在"
+
+msgid "x_not_existed"
+msgstr "名称不存在"
+
+msgid "x_out_of_range"
+msgstr "超出范围"

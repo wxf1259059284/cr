@@ -1,0 +1,32 @@
+msgid "x_connection_refused"
+msgstr "拒绝连接"
+
+msgid "x_unknown_error"
+msgstr "未知错误"
+
+msgid "x_is_running"
+msgstr "正在运行"
+
+msgid "x_busy_server"
+msgstr "服务器繁忙"
+
+msgid "x_no_operation_permission"
+msgstr "无操作权限"
+
+msgid "x_invalid_parameter"
+msgstr "无效的参数"
+
+msgid "x_invalid_parameter_value"
+msgstr "参数值无效"
+
+msgid "x_duplicate_submission"
+msgstr "重复的提交"
+
+msgid "x_duplicate_request"
+msgstr "重复的请求"
+
+msgid "x_data_save_failed"
+msgstr "数据保存失败"
+
+msgid "x_invalid_value"
+msgstr "无效的值"

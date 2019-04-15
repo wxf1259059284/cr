@@ -1,0 +1,35 @@
+msgid "x_static_traffic"
+msgstr "静态流量"
+
+msgid "x_dynamic_traffic"
+msgstr "动态流量"
+
+msgid "x_invalid_parameters"
+msgstr "无效参数"
+
+msgid "x_required_field"
+msgstr "必填字段"
+
+msgid "x_name_existed"
+msgstr "名称已存在"
+
+msgid "x_out_of_range"
+msgstr "参数值超出范围"
+
+msgid "x_fields_not_exist"
+msgstr "字段不存在"
+
+msgid "x_event_in_progress"
+msgstr "事件正在进行中"
+
+msgid "x_missing_parameters"
+msgstr "参数缺失"
+
+msgid "x_field_invalid"
+msgstr "字段不合法"
+
+msgid "x_please_upload_pcap"
+msgstr "请上传以.pcap结尾的文件"
+
+msgid "x_category_be_used"
+msgstr "流量类型正在被使用,无法删除"

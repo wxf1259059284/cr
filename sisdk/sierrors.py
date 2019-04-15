@@ -1,0 +1,3 @@
+
+class ParamTypeErrors(BaseException):
+    pass

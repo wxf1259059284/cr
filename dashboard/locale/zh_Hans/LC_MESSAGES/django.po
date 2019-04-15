@@ -1,0 +1,20 @@
+msgid "x_general_user"
+msgstr "普通用户"
+
+msgid "x_administrator"
+msgstr "管理员"
+
+msgid "x_instance"
+msgstr "实例"
+
+msgid "x_scenes"
+msgstr "场景"
+
+msgid "x_target"
+msgstr "标靶"
+
+msgid "x_flow"
+msgstr "流量"
+
+msgid "x_task"
+msgstr "任务"

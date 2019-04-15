@@ -1,0 +1,14 @@
+msgid "x_len_three"
+msgstr "长度不小于3，且不大于100"
+
+msgid "x_english_num"
+msgstr "名称仅由英文字母，数字以及下划线组成"
+
+msgid "x_name_not_spaces"
+msgstr "名称中不能含有空格"
+
+msgid "x_illegal_parameter_value"
+msgstr "非法参数值"
+
+msgid "x_code_not_specifications"
+msgstr "代码不符合规范"
